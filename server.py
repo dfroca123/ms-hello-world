@@ -16,7 +16,7 @@ def health_check():
 
 def run_server():
    logging.INFO('Starting Server')
-   run(host='0.0.0.0', port=8080, server='paste')
+   run(host='0.0.0.0', port=settings.PORT, server='paste')
 
    if __name__ == '__main__':
       run_server()
